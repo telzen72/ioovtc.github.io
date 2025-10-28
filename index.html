@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Independent Owner-Operators VTC</title>
+  <meta name="description" content="Independent Owner-Operators VTC — American Truck Simulator community focused on realism, camaraderie, and events." />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    /* ===== I.O.O. Brand Palette (matches logo) ===== */
+    :root{
+      --navy-900:#0f1420;
+      --navy-800:#171e2b;
+      --navy-700:#1e2636;
+      --cream:#f4ecd8;
+      --gold:#d3a14d;
+      --bronze:#8a5b2b;
+      --text:#e9edf6;
+      --muted:#b9c1d6;
+      --ink:#0c0f14;
+      --radius:18px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      background:var(--navy-900);
+      color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    }
+    a{color:var(--gold);text-decoration:none}
+    a:hover{filter:brightness(1.08)}
+
+    header{
+      padding:28px 18px 0;
+      display:flex;
+      justify-content:center;
+      background:
+        radial-gradient(1200px 480px at 50% -220px, rgba(211,161,77,.25), transparent 65%),
+        linear-gradient(180deg, var(--navy-900) 0%, var(--navy-800) 60%, var(--navy-900) 100%);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .wrap{width:100%;max-width:var(--maxw)}
+    .hero{
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:18px;
+      align-items:center;
+      padding:22px 0 28px;
+      margin:0 auto 14px;
+      border-radius:var(--radius);
+    }
+    .logo{
+      width:110px;height:110px;border-radius:16px;
+      display:grid;place-items:center;
+      background:linear-gradient(140deg, rgba(211,161,77,.18), rgba(23,30,43,.6));
+      border:1px solid rgba(211,161,77,.35);
+      overflow:hidden;
+      box-shadow:0 10px 28px rgba(0,0,0,.35);
+    }
+    .logo img{max-width:100%;max-height:100%;display:block}
+
+    h1{font-size:clamp(28px,4vw,40px);margin:0 0 6px;line-height:1.15}
+    .tag{
+      color:var(--cream);
+      font-weight:600;
+      letter-spacing:.2px;
+      font-size:clamp(14px,2.1vw,18px);
+      margin:0 0 14px;
+    }
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      background:linear-gradient(180deg, var(--gold), #b7863f);
+      color:#2b1a05;font-weight:800;border:0;padding:12px 18px;border-radius:12px;
+      text-decoration:none;box-shadow:0 10px 26px rgba(211,161,77,.28);
+      border:1px solid rgba(138,91,43,.6);
+    }
+    .btn.secondary{
+      background:transparent;color:var(--cream);
+      border:1px solid rgba(211,161,77,.55);
+      box-shadow:none;
+    }
+
+    main{padding:8px 18px 40px;display:flex;justify-content:center}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    .card{
+      grid-column: span 12;
+      background:var(--navy-700);
+      border:1px solid rgba(211,161,77,.22);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.25);
+    }
+    .card h2{margin:0 0 10px;font-size:22px;color:var(--cream)}
+    .muted{color:var(--muted)}
+    .badge{
+      display:inline-block;background:var(--cream);color:var(--ink);
+      padding:3px 8px;border-radius:999px;font-weight:700;font-size:12px;
+      border:1px solid rgba(138,91,43,.35)
+    }
+    footer{padding:26px 18px 40px;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,.06)}
+
+    @media(min-width:860px){ .card.span6{grid-column: span 6;} }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div class="logo">
+      <img src="images/logo.png" alt="Independent Owner-Operators VTC logo" />
+    </div>
+    <div>
+      <h1>Independent Owner-Operators VTC</h1>
+      <p class="tag">Drive Free – Haul Together</p>
+      <div class="cta-row">
+        <a class="btn" href="https://discord.gg/bRbqajvvHJ" target="_blank" rel="noopener">💬 Join our Discord</a>
+        <a class="btn secondary" href="#about">Learn more</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap grid">
+
+    <section id="about" class="card span6">
+      <h2>About the VTC <span class="badge">ATS</span></h2>
+      <p class="muted">
+        The Independent Owner-Operators (I.O.O.) VTC is a community for serious American Truck Simulator drivers focused on
+        realism, camaraderie, and clean convoys. We run weekly events, maintain fair play standards, and support drivers with tools
+        and guides to keep the roads fun.
+      </p>
+    </section>
+
+    <section class="card span6">
+      <h2>How to Join</h2>
+      <p class="muted">
+        1) Click <strong>Join our Discord</strong> above.<br/>
+        2) Go to <em>#applications</em> and follow the pinned instructions.<br/>
+        3) A coordinator will review and get you rolling.
+      </p>
+    </section>
+
+    <section class="card span6">
+      <h2>Events & Convoys</h2>
+      <p class="muted">
+        We schedule convoys weekly and post routes, start times, and DLC requirements in Discord.
+        Check the <em>#events</em> channel for the latest info and photos from past runs.
+      </p>
+    </section>
+
+    <section class="card span6">
+      <h2>Giveaways</h2>
+      <p class="muted">
+        100% of donations go to community giveaway items (gift cards, DLC, merch). Winners are announced in Discord after each event.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p class="muted">
+        Questions about the VTC or partnerships? Jump into Discord or email us at
+        <a href="mailto:info@ioovtc.com">info@ioovtc.com</a>.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  © <span id="y"></span> Independent Owner-Operators VTC — All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
